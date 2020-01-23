@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[BINGYAN]]></title>
-  <link href="http://bingyan0067.github.io/atom.xml" rel="self"/>
-  <link href="http://bingyan0067.github.io/"/>
-  <updated>2020-01-23T17:36:04+08:00</updated>
-  <id>http://bingyan0067.github.io/</id>
+  <link href="http://bingyan0067.github.io/mbyy/MWeb/atom.xml" rel="self"/>
+  <link href="http://bingyan0067.github.io/mbyy/MWeb/"/>
+  <updated>2020-01-23T17:37:34+08:00</updated>
+  <id>http://bingyan0067.github.io/mbyy/MWeb/</id>
   <author>
     <name><![CDATA[]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[markdown 基本用法]]></title>
-    <link href="http://bingyan0067.github.io/bingyan-blog-markdown.html"/>
+    <link href="http://bingyan0067.github.io/mbyy/MWeb/bingyan-blog-markdown.html"/>
     <updated>2020-01-23T15:27:45+08:00</updated>
-    <id>http://bingyan0067.github.io/bingyan-blog-markdown.html</id>
+    <id>http://bingyan0067.github.io/mbyy/MWeb/bingyan-blog-markdown.html</id>
     <content type="html"><![CDATA[
 <ol>
 <li><a href="https://blog.csdn.net/weixin_43593330/article/details/101062750">文字样式设置(更改字体、颜色、大小，设置文字背景色，调整图片大小设置居中)</a>  html</li>
@@ -30,9 +30,9 @@
   
   <entry>
     <title type="html"><![CDATA[技术文档资源合集]]></title>
-    <link href="http://bingyan0067.github.io/15797640962809.html"/>
+    <link href="http://bingyan0067.github.io/mbyy/MWeb/15797640962809.html"/>
     <updated>2020-01-23T15:21:36+08:00</updated>
-    <id>http://bingyan0067.github.io/15797640962809.html</id>
+    <id>http://bingyan0067.github.io/mbyy/MWeb/15797640962809.html</id>
     <content type="html"><![CDATA[
 <p>一. 常识</p>
 
@@ -56,9 +56,9 @@
   
   <entry>
     <title type="html"><![CDATA[Markdown > Mermaid > gantt 技术文档]]></title>
-    <link href="http://bingyan0067.github.io/15797453050764.html"/>
+    <link href="http://bingyan0067.github.io/mbyy/MWeb/15797453050764.html"/>
     <updated>2020-01-23T10:08:25+08:00</updated>
-    <id>http://bingyan0067.github.io/15797453050764.html</id>
+    <id>http://bingyan0067.github.io/mbyy/MWeb/15797453050764.html</id>
     <content type="html"><![CDATA[
 <h3 id="toc_0">甘特图简介</h3>
 
@@ -202,9 +202,9 @@ ect.</p>
   
   <entry>
     <title type="html"><![CDATA[Test For Mermaid]]></title>
-    <link href="http://bingyan0067.github.io/15796948457650.html"/>
+    <link href="http://bingyan0067.github.io/mbyy/MWeb/15796948457650.html"/>
     <updated>2020-01-22T20:07:25+08:00</updated>
-    <id>http://bingyan0067.github.io/15796948457650.html</id>
+    <id>http://bingyan0067.github.io/mbyy/MWeb/15796948457650.html</id>
     <content type="html"><![CDATA[
 <ul>
 <li>
@@ -260,9 +260,9 @@ ect.</p>
   
   <entry>
     <title type="html"><![CDATA[欢迎使用 MWeb]]></title>
-    <link href="http://bingyan0067.github.io/mby-web-blog.html"/>
+    <link href="http://bingyan0067.github.io/mbyy/MWeb/mby-web-blog.html"/>
     <updated>2020-01-21T15:20:21+08:00</updated>
-    <id>http://bingyan0067.github.io/mby-web-blog.html</id>
+    <id>http://bingyan0067.github.io/mbyy/MWeb/mby-web-blog.html</id>
     <content type="html"><![CDATA[
 <p>MWeb 是专业的 Markdown 写作、记笔记、静态博客生成软件，目前已支持 Mac，iPad 和 iPhone。MWeb 有以下特色：</p>
 
