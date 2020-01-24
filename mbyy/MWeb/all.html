@@ -1,201 +1,428 @@
-<!DOCTYPE HTML>
-<html>
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js"><!--<![endif]-->
 <head>
-	<meta charset="utf-8">
-	<title>  
-	  
-  	BINGYAN
-  	
-	</title>
+  <meta charset="utf-8">
+  <title>
+    
+  BINGYAN
+  
+
+  </title>
+  <meta name="author" content="">
+  <meta name="description" content="Mwebmarkdown使用笔记">
 
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link href="atom.xml" rel="alternate" title="BINGYAN" type="application/atom+xml">
-
-	<link href="asset/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-	<link href="asset/stylesheets/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
-	<script src="asset/javascripts/jquery.min.js"></script>
-	<script src="asset/highlightjs/highlight.pack.js"></script>
-	<link href="asset/highlightjs/styles/solarized_dark.css" media="screen, projection" rel="stylesheet" type="text/css">
-<script>hljs.initHighlightingOnLoad();</script>
-
-	<!--[if lt IE 9]><script src="asset/javascripts/html5.js"></script><![endif]-->
-	<!-- <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'> -->
-	<style type="text/css">
-/* latin */
-@font-face {
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Nunito-Light'), url(asset/font/1TiHc9yag0wq3lDO9cw0voX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
-/* latin */
-@font-face {
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Nunito-Regular'), url(asset/font/6TbRXKWJjpj6V2v_WyRbMX-_kf6ByYO6CLYdB4HQE-Y.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
-/* latin */
-@font-face {
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Nunito-Bold'), url(asset/font/TttUCfJ272GBgSKaOaD7KoX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
-	</style>
-	
-	<style type="text/css">
-	.container .left-col{ opacity: 1;}
-	#pagenavi a{ font-size: 1.3em;}
-	#pagenavi .next:before{ top: 3px;}
-	#pagenavi .prev:before{ top: 3px;}
-	.container .mid-col .mid-col-container #content .archives .title{ font-size: 1.5em;}
-	.container .mid-col .mid-col-container #content article{ padding: 15px 0px;}
-	#header .subtitle {
-		line-height: 1.2em;
-		padding-top: 8px;
-	}
-	article pre{ background: none; border: none; padding: 0;}
-	article .entry-content{text-align: left;}
-	.share-comment{ padding: 25px 0px; clear: both;}
-	hr{ margin: 20px 0px;border: 0; border-top:solid 1px #ddd;}
-	</style>
   
+  <link href="asset/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="atom.xml" rel="alternate" title="BINGYAN" type="application/atom+xml">
+  <script src="asset/js/modernizr-2.0.js"></script>
+  <script src="asset/js/jquery.min.js"></script>
+  <script src="asset/highlightjs/highlight.pack.js"></script>
+  <link href="asset/highlightjs/styles/solarized_light.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script>hljs.initHighlightingOnLoad();</script>
 
+  <style type="text/css">
+  .cat-children-p{ padding: 6px 0px;}
+  .hljs{background: none;}
+  </style>
+  <script type="text/javascript">
+  var isAddSildbar = true;
+  </script>
+  <script src="asset/js/octopress.js" type="text/javascript"></script>
 </head>
+<script type="text/javascript">
+//链接新开窗口
+function addBlankTargetForLinks () {
+  $('a[href^="http"]').each(function(){
+      $(this).attr('target', '_blank');
+  });
+}
+$(document).ready(function(event) {
+  addBlankTargetForLinks();
+});
+</script>
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="index.html">BINGYAN</a></h1>
+  
+    <h2>Mwebmarkdown使用笔记</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:bingyan0067.github.io/mbyy/MWeb" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+
+  <li id=""><a target="self" href="index.html">Home</a></li>
+
+  <li id=""><a target="_self" href="archives.html">Archives</a></li>
+
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content"> 
+<div class="blog-index">
+
+	<article>
+		 <header>
+		  	<h1 class="entry-title"><a href="15798777293114.html">Mweb 建立静态网站技术文档</a></h1>
+			<p class="meta"><time datetime="2020-01-24T22:55:29+08:00" 
+			pubdate data-updated="true">2020/1/24</time></p>
+		 </header>
+	  	<div class="entry-content">
+		  	
+		  	<ul>
+<li>
+<a href="#toc_0">第一步： git发布脚本</a>
+</li>
+<li>
+<a href="#toc_1">第二步: Clone 你的 pages 到 MWeb 静态网站生成目录中</a>
+</li>
+<li>
+<a href="#toc_2">第三步：配置发布脚本</a>
+</li>
+<li>
+<a href="#toc_3">第四步：使用</a>
+</li>
+</ul>
 
 
-<body>
-	<div class="container">
-		<div class="left-col">
-			<div class="intrude-less">
-				<header id="header" class="inner">
-				 
-					
-					<h1><a href="index.html">BINGYAN</a></h1>
-					<p class="subtitle">Mwebmarkdown使用笔记</p>
-					<nav id="main-nav">
-						<ul class="main">
-						
-						  <li id=""><a target="self" href="index.html">Home</a></li>
-						
-						  <li id=""><a target="_self" href="archives.html">Archives</a></li>
-						
-						</ul>
-					</nav>
+<h3 id="toc_0">第一步： git发布脚本</h3>
 
-					<nav id="sub-nav">
-						<div class="social">
+<p><a href="https://pages.github.com">Create a repository</a> github官网</p>
+
+<pre class="line-numbers"><code class="language-text">MdeMacBook-Pro:~ m.$ ls
+20190902_100203033  Movies          akindle 
+20190902_100956510  Music           a国学
+64pounds 笔记.docx    NHK新编日语     a英语
+AT.postflight.42853 One Drive       a我一寸照
+Applications        Pictures        nano.save
+Desktop         Public          旧电脑 马冰妍
+Documents       VirtualBox VMs      赛汗工作finder
+Downloads       WechatIMG516.jpeg
+Library         WechatIMG55.jpeg
+
+MdeMacBook-Pro:~ m.$ cd Desktop
+MdeMacBook-Pro:Desktop m.$ ls
+ books              昂沁
+Linux_test          新机常备&amp;必读
+打印              遥远的敖特尔 封面
+
+ MdeMacBook-Pro:Desktop m.$ mkdir github 
+
+MdeMacBook-Pro:Desktop m.$ ls
+ books              昂沁
+Linux_test          新机常备&amp;必读
+github              遥远的敖特尔 封面
+打印
+MdeMacBook-Pro:Desktop m.$ cd github/
+MdeMacBook-Pro:github m.$ git clone https://github.com/BINGYAN0067/bingyan0067.github.io
+Cloning into &#39;bingyan0067.github.io&#39;...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+MdeMacBook-Pro:github m.$ 
+MdeMacBook-Pro:github m.$ cd bingyan0067.github.io
+MdeMacBook-Pro:bingyan0067.github.io m.$ echo &quot;Hello Word&quot; &gt; index.html
+MdeMacBook-Pro:bingyan0067.github.io m.$ 
+MdeMacBook-Pro:bingyan0067.github.io m.$ git add --all
+MdeMacBook-Pro:bingyan0067.github.io m.$ git commit -m &quot;Initial commit&quot;
+[master e63ca75] Initial commit
+ Committer: M &lt;m.@MdeMacBook-Pro.local&gt;
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 index.html
+MdeMacBook-Pro:bingyan0067.github.io m.$ git push -u origin master
+
+Username for &#39;https://github.com&#39;: bingyan0067
+Password for &#39;https://bingyan0067@github.com&#39;: 
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 288 bytes | 288.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/BINGYAN0067/bingyan0067.github.io
+   fb73c83..e63ca75  master -&gt; master
+Branch master set up to track remote branch master from origin.
+MdeMacBook-Pro:bingyan0067.github.io m.$ 
+
+</code></pre>
+
+<h3 id="toc_1">第二步: Clone 你的 pages 到 MWeb 静态网站生成目录中</h3>
+
+<blockquote>
+<p><font color = grey>如果你之前都已经可以正常用 git 来发布静态网站了，可以跳过这一步。如果不是，请看下面的步骤：</font></p>
+
+<p><font color = red>所以我是不是多了一步？？</font></p>
+</blockquote>
+
+<p><img src="media/15798777293114/15798789367516.jpg" alt="" style="width:625px;"/><br/>
+注：此处我改了静态网站的保存位置，但是很遗憾，原来的超级长的地址我没有记下来。现在的我改在了桌面的GitHub的文件夹里。</p>
+
+<pre class="line-numbers"><code class="language-text">MdeMacBook-Pro:github m.$ git clone https://github.com/BINGYAN0067/bingyan0067.github.io
+</code></pre>
+
+<h3 id="toc_2">第三步：配置发布脚本</h3>
+
+<p>在下图，在 “MWeb 偏好设置” - “扩展” - “发布脚本” 中配置。<br/>
+如果你点击 “加载例子” 按钮，加载出来的是以下的脚本样例：</p>
+
+<h3 id="toc_3">第四步：使用</h3>
+
+<p>使用方法非常简单，右键网站分类，选择 “复制发布脚本命令并打开终端（Terminal）&hellip;”，当终端打开后，在终端中按快捷键 Command + V 即可。如图：</p>
 
 
-
-
-
-
-
-
-
-
-
-
-
-								
-
-								<a class="rss" href="atom.xml" title="RSS">RSS</a>
-							
-						</div>
-					</nav>
-				</header>				
-			</div>
-		</div>	
-		<div class="mid-col">
-			<div class="mid-col-container"> <div id="content" class="inner">
-<div itemscope itemtype="http://schema.org/Blog">
-
-
-	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-		<div class="meta">
-			<div class="date">
-				<time datetime="2020-01-23T15:27:45+08:00" itemprop="datePublished">2020/1/23</time>
-			</div>
-			
-			 
-			
 		</div>
-		<h1 class="title" itemprop="name"><a href="bingyan-blog-markdown.html" itemprop="url">
-		markdown 基本用法</a></h1>
-		<div class="entry-content" itemprop="articleBody">
-			
-			<ol>
-<li><a href="https://blog.csdn.net/weixin_43593330/article/details/101062750">文字样式设置(更改字体、颜色、大小，设置文字背景色，调整图片大小设置居中)</a>  html</li>
-<li><a href="https://editor.csdn.net/md/?articleId=104060855">欢迎使用CSDN-markdow编辑器</a></li>
-<li></li>
-</ol>
 
-
-			
-			
-		</div>
+		
 
 	</article>
  
-	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-		<div class="meta">
-			<div class="date">
-				<time datetime="2020-01-23T15:21:36+08:00" itemprop="datePublished">2020/1/23</time>
-			</div>
-			
-			 
-			
+	<article>
+		 <header>
+		  	<h1 class="entry-title"><a href="15797914685945.html">Markdown > Mermaid > flow chart 技术文档</a></h1>
+			<p class="meta"><time datetime="2020-01-23T22:57:48+08:00" 
+			pubdate data-updated="true">2020/1/23</time></p>
+		 </header>
+	  	<div class="entry-content">
+		  	
+		  	<ol>
+<li>微信文章： <a href="https://mp.weixin.qq.com/s/ztrOApJcEEld-Tem77njXQ">Markdown 进阶技能：用代码画流程图（编程零基础也适用）</a> 是否要打开冰箱</li>
+<li><a href="https://zh.mweb.im/markdown.html">文档 - Markdown 语法</a> mweb自己的博客</li>
+<li>mermaid官网:<a href="https://mermaid-js.github.io/mermaid/#/flowchart">https://mermaid-js.github.io/mermaid/#/flowchart</a></li>
+</ol>
+
+<p>s</p>
+
+
 		</div>
-		<h1 class="title" itemprop="name"><a href="15797640962809.html" itemprop="url">
-		技术文档资源合集</a></h1>
-		<div class="entry-content" itemprop="articleBody">
-			
-			<p>一. 常识</p>
+
+		
+
+	</article>
+ 
+	<article>
+		 <header>
+		  	<h1 class="entry-title"><a href="15797897411205.html">Test for echarts in Mweb</a></h1>
+			<p class="meta"><time datetime="2020-01-23T22:29:01+08:00" 
+			pubdate data-updated="true">2020/1/23</time></p>
+		 </header>
+	  	<div class="entry-content">
+		  	
+		  	<p><a href="https://zh.mweb.im/markdown.html">文档 - Markdown 语法</a> mweb自己的博客</p>
+
+<h4 id="toc_0">1. 饼图没有</h4>
+
+<h4 id="toc_1">2. 折线图有：抄如上官网的</h4>
+
+<pre class="line-numbers"><code class="language-echarts">option = {
+    xAxis: {
+        type: &#39;category&#39;,
+        data: [&#39;Mon&#39;, &#39;Tue&#39;, &#39;Wed&#39;, &#39;Thu&#39;, &#39;Fri&#39;, &#39;Sat&#39;, &#39;Sun&#39;]
+    },
+    yAxis: {
+        type: &#39;value&#39;
+    },
+    series: [{
+        data: [820, 932, 901, 934, 1290, 1330, 1320],
+        type: &#39;line&#39;
+    }]
+};
+</code></pre>
+
+
+		</div>
+
+		
+
+	</article>
+ 
+	<article>
+		 <header>
+		  	<h1 class="entry-title"><a href="15796948457650.html">Test For Mermaid - Gantt ; flow chart；</a></h1>
+			<p class="meta"><time datetime="2020-01-22T20:07:25+08:00" 
+			pubdate data-updated="true">2020/1/22</time></p>
+		 </header>
+	  	<div class="entry-content">
+		  	
+		  	<h3 id="toc_0">1.甘特图</h3>
+
+<pre class="line-numbers"><code class="language-mermaid">gantt
+    dateFormat YYYY-MM-DD
+    title 工作进度表-marmaid-gantt
+    
+    section 每月工作 
+    1:       done,des1,2020-01-01,2020-02-01
+    2:      crit, done, des2, 2020-01-01,2020-02-01 
+    3:      crit,active,des3,2020-01-01,2020-02-01
+    4:      active, des4, 2020-04-02,2020-05-01
+    5:      active,des5, 2020-04-02,2020-05-01
+    6:       active,des6,2020-04-02,2020-05-01
+    7:      active,des7,2020-07-02,2020-08-01
+    8:      active,des8,2020-07-02,2020-08-01
+    9:      active,des9,2020-07-02,2020-08-01
+    10:     active,des10,2020-10-02,2020-11-01
+    11:     active,des11 ,2020-10-02,2020-11-01
+    12:     crit,des12,2020-10-02,2020-11-01
+    
+    
+    section 每季度工作 
+    第一季度: active,c1,2020-01-01,2020-03-31
+    第二季度: active,c2,after c1,2020-06-30
+    第三季度: active,c3,2020-07-02,2020-09-30
+    第四季度: active,c4,2020-10-02,2021-01-01
+    
+    section 其他工作
+    qita1: active,c5, 2020-01-01,2020-12-01
+</code></pre>
+
+<pre class="line-numbers"><code class="language-mermaid">gantt
+    dateFormat YYYY-MM-DDD
+    title 工作进度表-marmaid-gantt
+    
+    section 每月工作 
+    1:       active,des1,2020-01-1,2020-01-56
+    
+</code></pre>
+
+<h3 id="toc_1">2.流程图</h3>
+
+
+		</div>
+
+		
+
+	</article>
+ 
+	<article>
+		 <header>
+		  	<h1 class="entry-title"><a href="15797910332994.html">Mweb 画图库的添加:资料</a></h1>
+			<p class="meta"><time datetime="2020-01-23T22:50:33+08:00" 
+			pubdate data-updated="true">2020/1/23</time></p>
+		 </header>
+	  	<div class="entry-content">
+		  	
+		  	<ol>
+<li>主参考：<a href="https://zh.mweb.im/14689205256580.html">自定义预览样式，让 MWeb 支持 ECharts、mermaid、PlantUML 等任何 JS</a></li>
+<li>ECharts官网：<a href="https://www.echartsjs.com/examples/zh/index.html">https://www.echartsjs.com/examples/zh/index.html</a></li>
+<li>plantuml官网：<a href="https://plantuml.com">https://plantuml.com</a></li>
+<li>Graphviz官网：<a href="http://www.graphviz.org">http://www.graphviz.org</a></li>
+</ol>
+
+
+		</div>
+
+		
+
+	</article>
+ 
+	<article>
+		 <header>
+		  	<h1 class="entry-title"><a href="15797644655509.html">markdown 基本用法</a></h1>
+			<p class="meta"><time datetime="2020-01-23T15:27:45+08:00" 
+			pubdate data-updated="true">2020/1/23</time></p>
+		 </header>
+	  	<div class="entry-content">
+		  	
+		  	<h1 id="toc_0">Mweb 帮助文档<a href="https://zh.mweb.im/markdown.html">https://zh.mweb.im/markdown.html</a></h1>
+
+<ol>
+<li><a href="https://blog.csdn.net/weixin_43593330/article/details/101062750">文字样式设置(更改字体、颜色、大小，设置文字背景色，调整图片大小设置居中)</a>  html</li>
+<li><a href="https://editor.csdn.net/md/?articleId=104060855">欢迎使用CSDN-markdow编辑器</a></li>
+<li>微信公众号上有很多信息</li>
+<li>转义字符的问题</li>
+</ol>
+
+
+		</div>
+
+		
+
+	</article>
+ 
+	<article>
+		 <header>
+		  	<h1 class="entry-title"><a href="15797640962809.html">Mweb 技术文档资源合集 （静态网页的发布）</a></h1>
+			<p class="meta"><time datetime="2020-01-23T15:21:36+08:00" 
+			pubdate data-updated="true">2020/1/23</time></p>
+		 </header>
+	  	<div class="entry-content">
+		  	
+		  	<p>一. 常识</p>
 
 <ol>
 <li><a href="https://www.cnblogs.com/tsingke/p/9363980.html">码字工作者的发文姿势—— 用MWeb+Markdown Here+七牛 轻松实现多平台发布</a></li>
 <li><a href="https://www.jianshu.com/p/2a9ea0ee9a02">推荐一款Markdown写作神器&ndash;MWeb</a>
-外部模式是什么意思？<br/>
-3.</li>
+外部模式是什么意思？</li>
 </ol>
 
 <p>二. 发布网站 </p>
 
 <ol>
 <li><a href="https://sspai.com/post/45521">全能型 Markdown 应用 MWeb 3.0，让我们可以更快速地记录笔记和检索文档</a></li>
-<li><a href="https://zh.mweb.im/mweb-static-blog.html">MWeb 生成静态网站 &amp; 博客</a>  mweb自己的博客</li>
-<li></li>
+<li><a href="https://zh.mweb.im/mweb-static-blog.html">MWeb 生成静态网站 &amp; 博客</a>   mweb自己的博客</li>
+<li><a href="https://zh.mweb.im/how_to_use_shell_script.html">如何使用“发布脚本”功能发布静态网站</a>   mweb自己的博客</li>
+<li><a href="https://pages.github.com">Create a repository</a> github官网</li>
+<li><a href="https://blog.csdn.net/i042416/article/details/86666843">如何查看自己的Github仓库占据了多少存储空间</a> ： 打开GitHub - setting - repository - 即可看到</li>
 </ol>
 
+<hr/>
 
-			
-			
+<ol>
+<li><a href="https://gitee.com">中国有gitee，国外有GitHub</a> </li>
+<li><a href="https://guides.github.com/activities/hello-world/">github建立分支</a></li>
+<li><a href="https://zh.mweb.im/14689205256580.html">画图库的添加</a>  mweb自己的博客</li>
+</ol>
+
+<hr/>
+
+<p><font color = red><strong>echart : 牛逼！！！<font/></strong>  <a href="https://qiankunpingtai.cn/article/1566803877060">https://qiankunpingtai.cn/article/1566803877060</a> 由简到繁</p>
+
+
 		</div>
+
+		
 
 	</article>
  
-	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-		<div class="meta">
-			<div class="date">
-				<time datetime="2020-01-23T10:08:25+08:00" itemprop="datePublished">2020/1/23</time>
-			</div>
-			
-			 
-			
-		</div>
-		<h1 class="title" itemprop="name"><a href="15797453050764.html" itemprop="url">
-		Markdown > Mermaid > gantt 技术文档</a></h1>
-		<div class="entry-content" itemprop="articleBody">
-			
-			<h3 id="toc_0">甘特图简介</h3>
+	<article>
+		 <header>
+		  	<h1 class="entry-title"><a href="15797453050764.html">Markdown > Mermaid > gantt 技术文档</a></h1>
+			<p class="meta"><time datetime="2020-01-23T10:08:25+08:00" 
+			pubdate data-updated="true">2020/1/23</time></p>
+		 </header>
+	  	<div class="entry-content">
+		  	
+		  	<h3 id="toc_0">甘特图简介</h3>
 
 <p>Marmaid-gantt官方网站：<a href="https://mermaid-js.github.io/mermaid/#/gantt?id=styling">Gantt diagrams</a> 摘抄如下:</p>
 
@@ -204,6 +431,8 @@
 </blockquote>
 
 <p><code>不知道红色标注是怎么写的</code></p>
+
+<hr/>
 
 <ul>
 <li>
@@ -257,6 +486,8 @@
 </ul>
 
 
+<hr/>
+
 <h3 id="toc_2">事例：</h3>
 
 <pre class="line-numbers"><code class="language-text">  ```marmaid
@@ -274,6 +505,8 @@ gantt
   ```
 
 </code></pre>
+
+<hr/>
 
 <h3 id="toc_3">解释：</h3>
 
@@ -332,96 +565,24 @@ ect.</p>
 
 <h3 id="toc_12">Gantt END</h3>
 
+<p>其他:<a href="https://segmentfault.com/a/1190000006894191">用 mermaid 画甘特图</a></p>
 
-			
-			
+
 		</div>
+
+		
 
 	</article>
  
-	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-		<div class="meta">
-			<div class="date">
-				<time datetime="2020-01-22T20:07:25+08:00" itemprop="datePublished">2020/1/22</time>
-			</div>
-			
-			 
-			
-		</div>
-		<h1 class="title" itemprop="name"><a href="15796948457650.html" itemprop="url">
-		Test For Mermaid</a></h1>
-		<div class="entry-content" itemprop="articleBody">
-			
-			<ul>
-<li>
-<a href="#toc_0">1.甘特图</a>
-</li>
-</ul>
-
-
-<h3 id="toc_0">1.甘特图</h3>
-
-<pre class="line-numbers"><code class="language-mermaid">gantt
-    dateFormat YYYY-MM-DD
-    title 工作进度表-marmaid-gantt
-    
-    section 每月工作 
-    1:       done,des1,2020-01-01,2020-02-01
-    2:      crit, done, des2, 2020-01-01,2020-02-01 
-    3:      crit,active,des3,2020-01-01,2020-02-01
-    4:      active, des4, 2020-04-02,2020-05-01
-    5:      active,des5, 2020-04-02,2020-05-01
-    6:       active,des6,2020-04-02,2020-05-01
-    7:      active,des7,2020-07-02,2020-08-01
-    8:      active,des8,2020-07-02,2020-08-01
-    9:      active,des9,2020-07-02,2020-08-01
-    10:     active,des10,2020-10-02,2020-11-01
-    11:     active,des11 ,2020-10-02,2020-11-01
-    12:     crit,des12,2020-10-02,2020-11-01
-    
-    
-    section 每季度工作 
-    第一季度: active,c1,2020-01-01,2020-03-31
-    第二季度: active,c2,after c1,2020-06-30
-    第三季度: active,c3,2020-07-02,2020-09-30
-    第四季度: active,c4,2020-10-02,2021-01-01
-    
-    section 其他工作
-    qita1: active,c5, 2020-01-01,2020-12-01
-</code></pre>
-
-<pre class="line-numbers"><code class="language-mermaid">gantt
-    dateFormat YYYY-MM-DDD
-    title 工作进度表-marmaid-gantt
-    
-    section 每月工作 
-    1:       active,des1,2020-01-1,2020-01-56
-    
- 
-
-</code></pre>
-
-
-			
-			
-		</div>
-
-	</article>
- 
-	<article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-		<div class="meta">
-			<div class="date">
-				<time datetime="2020-01-21T15:20:21+08:00" itemprop="datePublished">2020/1/21</time>
-			</div>
-			
-			 
-			
-		</div>
-		<h1 class="title" itemprop="name"><a href="mby-web-blog.html" itemprop="url">
-		欢迎使用 MWeb</a></h1>
-		<div class="entry-content" itemprop="articleBody">
-			
-			<p>MWeb 是专业的 Markdown 写作、记笔记、静态博客生成软件，目前已支持 Mac，iPad 和 iPhone。MWeb 有以下特色：</p>
+	<article>
+		 <header>
+		  	<h1 class="entry-title"><a href="15795912218222.html">欢迎使用 MWeb</a></h1>
+			<p class="meta"><time datetime="2020-01-21T15:20:21+08:00" 
+			pubdate data-updated="true">2020/1/21</time></p>
+		 </header>
+	  	<div class="entry-content">
+		  	
+		  	<p>MWeb 是专业的 Markdown 写作、记笔记、静态博客生成软件，目前已支持 Mac，iPad 和 iPhone。MWeb 有以下特色：</p>
 
 <h2 id="toc_0">软件本身：</h2>
 
@@ -488,35 +649,86 @@ ect.</p>
 </ol>
 
 
-			
-			
 		</div>
+
+		
 
 	</article>
   
-
-</div>
-<nav id="pagenavi">
-	 
+	<div class="pagination">
 	
-	<div class="center"><a href="archives.html">Blog Archives</a></div>
-
-</nav>
-
-</div>
-
-
-
-        </div>
-			<footer id="footer" class="inner">Copyright &copy; 2014
-Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp; 
-Theme by <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a>
-      </footer>
-		</div>
+<a href="archives.html">Blog Archives</a>
+	 
+	    
 	</div>
+</div>
+ <aside class="sidebar"> 
+
+	<section>
+	  <h1>Categories</h1>
+	  <ul id="recent_posts">
+	  
+	        
+	      </li>
+	   
+	  </ul>
+	</section>
+	<section>
+	  <h1>Recent Posts</h1>
+	  <ul id="recent_posts">
+	  
+	      
+		      <li class="post">
+		        <a href="15798777293114.html">Mweb 建立静态网站技术文档</a>
+		      </li>
+	     
+	  
+	      
+		      <li class="post">
+		        <a href="15797914685945.html">Markdown > Mermaid > flow chart 技术文档</a>
+		      </li>
+	     
+	  
+	      
+		      <li class="post">
+		        <a href="15797897411205.html">Test for echarts in Mweb</a>
+		      </li>
+	     
+	  
+	      
+		      <li class="post">
+		        <a href="15796948457650.html">Test For Mermaid - Gantt ; flow chart；</a>
+		      </li>
+	     
+	  
+	      
+		      <li class="post">
+		        <a href="15797910332994.html">Mweb 画图库的添加:资料</a>
+		      </li>
+	     
+	  
+	      
+	  
+	      
+	  
+	      
+	  
+	      
+	   
+	  </ul>
+	</section>
+	
+</aside> </div></div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 -  -
+  <span class="credit">Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp; Theme by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
 
   
     
+
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }});</script>
 

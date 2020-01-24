@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>
+    
+  Mweb 建立静态网站技术文档 - BINGYAN
+  
+
+  </title>
+  <meta name="author" content="">
+  <meta name="description" content="Mwebmarkdown使用笔记">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="asset/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="atom.xml" rel="alternate" title="BINGYAN" type="application/atom+xml">
+  <script src="asset/js/modernizr-2.0.js"></script>
+  <script src="asset/js/jquery.min.js"></script>
+  <script src="asset/highlightjs/highlight.pack.js"></script>
+  <link href="asset/highlightjs/styles/solarized_light.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <style type="text/css">
+  .cat-children-p{ padding: 6px 0px;}
+  .hljs{background: none;}
+  </style>
+  <script type="text/javascript">
+  var isAddSildbar = true;
+  </script>
+  <script src="asset/js/octopress.js" type="text/javascript"></script>
+</head>
+<script type="text/javascript">
+//链接新开窗口
+function addBlankTargetForLinks () {
+  $('a[href^="http"]').each(function(){
+      $(this).attr('target', '_blank');
+  });
+}
+$(document).ready(function(event) {
+  addBlankTargetForLinks();
+});
+</script>
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="index.html">BINGYAN</a></h1>
+  
+    <h2>Mwebmarkdown使用笔记</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:bingyan0067.github.io/mbyy/MWeb" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+
+  <li id=""><a target="self" href="index.html">Home</a></li>
+
+  <li id=""><a target="_self" href="archives.html">Archives</a></li>
+
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content"> 
+<div>
+	<article class="hentry" role="article">
+	<header>
+			  	<h1 class="entry-title">Mweb 建立静态网站技术文档</h1>
+				<p class="meta"><time datetime="2020-01-24T22:55:29+08:00" pubdate data-updated="true">2020/1/24</time></p>
+			 </header>
+		  	<div class="entry-content">
+			  	<ul>
+<li>
+<a href="#toc_0">第一步： git发布脚本</a>
+</li>
+<li>
+<a href="#toc_1">第二步: Clone 你的 pages 到 MWeb 静态网站生成目录中</a>
+</li>
+<li>
+<a href="#toc_2">第三步：配置发布脚本</a>
+</li>
+<li>
+<a href="#toc_3">第四步：使用</a>
+</li>
+</ul>
+
+
+<h3 id="toc_0">第一步： git发布脚本</h3>
+
+<p><a href="https://pages.github.com">Create a repository</a> github官网</p>
+
+<pre class="line-numbers"><code class="language-text">MdeMacBook-Pro:~ m.$ ls
+20190902_100203033  Movies          akindle 
+20190902_100956510  Music           a国学
+64pounds 笔记.docx    NHK新编日语     a英语
+AT.postflight.42853 One Drive       a我一寸照
+Applications        Pictures        nano.save
+Desktop         Public          旧电脑 马冰妍
+Documents       VirtualBox VMs      赛汗工作finder
+Downloads       WechatIMG516.jpeg
+Library         WechatIMG55.jpeg
+
+MdeMacBook-Pro:~ m.$ cd Desktop
+MdeMacBook-Pro:Desktop m.$ ls
+ books              昂沁
+Linux_test          新机常备&amp;必读
+打印              遥远的敖特尔 封面
+
+ MdeMacBook-Pro:Desktop m.$ mkdir github 
+
+MdeMacBook-Pro:Desktop m.$ ls
+ books              昂沁
+Linux_test          新机常备&amp;必读
+github              遥远的敖特尔 封面
+打印
+MdeMacBook-Pro:Desktop m.$ cd github/
+MdeMacBook-Pro:github m.$ git clone https://github.com/BINGYAN0067/bingyan0067.github.io
+Cloning into &#39;bingyan0067.github.io&#39;...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+MdeMacBook-Pro:github m.$ 
+MdeMacBook-Pro:github m.$ cd bingyan0067.github.io
+MdeMacBook-Pro:bingyan0067.github.io m.$ echo &quot;Hello Word&quot; &gt; index.html
+MdeMacBook-Pro:bingyan0067.github.io m.$ 
+MdeMacBook-Pro:bingyan0067.github.io m.$ git add --all
+MdeMacBook-Pro:bingyan0067.github.io m.$ git commit -m &quot;Initial commit&quot;
+[master e63ca75] Initial commit
+ Committer: M &lt;m.@MdeMacBook-Pro.local&gt;
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 index.html
+MdeMacBook-Pro:bingyan0067.github.io m.$ git push -u origin master
+
+Username for &#39;https://github.com&#39;: bingyan0067
+Password for &#39;https://bingyan0067@github.com&#39;: 
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 288 bytes | 288.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/BINGYAN0067/bingyan0067.github.io
+   fb73c83..e63ca75  master -&gt; master
+Branch master set up to track remote branch master from origin.
+MdeMacBook-Pro:bingyan0067.github.io m.$ 
+
+</code></pre>
+
+<h3 id="toc_1">第二步: Clone 你的 pages 到 MWeb 静态网站生成目录中</h3>
+
+<blockquote>
+<p><font color = grey>如果你之前都已经可以正常用 git 来发布静态网站了，可以跳过这一步。如果不是，请看下面的步骤：</font></p>
+
+<p><font color = red>所以我是不是多了一步？？</font></p>
+</blockquote>
+
+<p><img src="media/15798777293114/15798789367516.jpg" alt="" style="width:625px;"/><br/>
+注：此处我改了静态网站的保存位置，但是很遗憾，原来的超级长的地址我没有记下来。现在的我改在了桌面的GitHub的文件夹里。</p>
+
+<pre class="line-numbers"><code class="language-text">MdeMacBook-Pro:github m.$ git clone https://github.com/BINGYAN0067/bingyan0067.github.io
+</code></pre>
+
+<h3 id="toc_2">第三步：配置发布脚本</h3>
+
+<p>在下图，在 “MWeb 偏好设置” - “扩展” - “发布脚本” 中配置。<br/>
+如果你点击 “加载例子” 按钮，加载出来的是以下的脚本样例：</p>
+
+<h3 id="toc_3">第四步：使用</h3>
+
+<p>使用方法非常简单，右键网站分类，选择 “复制发布脚本命令并打开终端（Terminal）&hellip;”，当终端打开后，在终端中按快捷键 Command + V 即可。如图：</p>
+
+			</div>
+
+		
+	  
+		<footer>
+		 <p class="meta">
+
+			
+			<span class="categories">
+			 
+			</span>
+		    </p>
+		    <p class="meta">
+		      
+		 </p>
+	    
+		<div class="sharing">
+		  
+          
+
+          
+
+		</div>
+
+	    <p class="meta">
+	    
+	    
+	        <a class="basic-alignment right" href="15797914685945.html" 
+	        title="Next Post: Markdown > Mermaid > flow chart 技术文档">Markdown > Mermaid > flow chart 技术文档 &raquo;</a>
+	    
+	    </p>
+	  </footer>
+	</article>
+</div>
+ <aside class="sidebar"> 
+
+	<section>
+	  <h1>Categories</h1>
+	  <ul id="recent_posts">
+	  
+	        
+	      </li>
+	   
+	  </ul>
+	</section>
+	<section>
+	  <h1>Recent Posts</h1>
+	  <ul id="recent_posts">
+	  
+	      
+		      <li class="post">
+		        <a href="15798777293114.html">Mweb 建立静态网站技术文档</a>
+		      </li>
+	     
+	  
+	      
+		      <li class="post">
+		        <a href="15797914685945.html">Markdown > Mermaid > flow chart 技术文档</a>
+		      </li>
+	     
+	  
+	      
+		      <li class="post">
+		        <a href="15797897411205.html">Test for echarts in Mweb</a>
+		      </li>
+	     
+	  
+	      
+		      <li class="post">
+		        <a href="15796948457650.html">Test For Mermaid - Gantt ; flow chart；</a>
+		      </li>
+	     
+	  
+	      
+		      <li class="post">
+		        <a href="15797910332994.html">Mweb 画图库的添加:资料</a>
+		      </li>
+	     
+	  
+	      
+	  
+	      
+	  
+	      
+	  
+	      
+	   
+	  </ul>
+	</section>
+	
+</aside> </div></div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 -  -
+  <span class="credit">Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp; Theme by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+
+  
+    
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }});</script>
+
+</body>
+</html>

@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <title>
     
-  Test For Mermaid - Gantt ; flow chart； - BINGYAN
+  Test for echarts in Mweb - BINGYAN
   
 
   </title>
@@ -81,51 +81,30 @@ $(document).ready(function(event) {
 <div>
 	<article class="hentry" role="article">
 	<header>
-			  	<h1 class="entry-title">Test For Mermaid - Gantt ; flow chart；</h1>
-				<p class="meta"><time datetime="2020-01-22T20:07:25+08:00" pubdate data-updated="true">2020/1/22</time></p>
+			  	<h1 class="entry-title">Test for echarts in Mweb</h1>
+				<p class="meta"><time datetime="2020-01-23T22:29:01+08:00" pubdate data-updated="true">2020/1/23</time></p>
 			 </header>
 		  	<div class="entry-content">
-			  	<h3 id="toc_0">1.甘特图</h3>
+			  	<p><a href="https://zh.mweb.im/markdown.html">文档 - Markdown 语法</a> mweb自己的博客</p>
 
-<pre class="line-numbers"><code class="language-mermaid">gantt
-    dateFormat YYYY-MM-DD
-    title 工作进度表-marmaid-gantt
-    
-    section 每月工作 
-    1:       done,des1,2020-01-01,2020-02-01
-    2:      crit, done, des2, 2020-01-01,2020-02-01 
-    3:      crit,active,des3,2020-01-01,2020-02-01
-    4:      active, des4, 2020-04-02,2020-05-01
-    5:      active,des5, 2020-04-02,2020-05-01
-    6:       active,des6,2020-04-02,2020-05-01
-    7:      active,des7,2020-07-02,2020-08-01
-    8:      active,des8,2020-07-02,2020-08-01
-    9:      active,des9,2020-07-02,2020-08-01
-    10:     active,des10,2020-10-02,2020-11-01
-    11:     active,des11 ,2020-10-02,2020-11-01
-    12:     crit,des12,2020-10-02,2020-11-01
-    
-    
-    section 每季度工作 
-    第一季度: active,c1,2020-01-01,2020-03-31
-    第二季度: active,c2,after c1,2020-06-30
-    第三季度: active,c3,2020-07-02,2020-09-30
-    第四季度: active,c4,2020-10-02,2021-01-01
-    
-    section 其他工作
-    qita1: active,c5, 2020-01-01,2020-12-01
+<h4 id="toc_0">1. 饼图没有</h4>
+
+<h4 id="toc_1">2. 折线图有：抄如上官网的</h4>
+
+<pre class="line-numbers"><code class="language-echarts">option = {
+    xAxis: {
+        type: &#39;category&#39;,
+        data: [&#39;Mon&#39;, &#39;Tue&#39;, &#39;Wed&#39;, &#39;Thu&#39;, &#39;Fri&#39;, &#39;Sat&#39;, &#39;Sun&#39;]
+    },
+    yAxis: {
+        type: &#39;value&#39;
+    },
+    series: [{
+        data: [820, 932, 901, 934, 1290, 1330, 1320],
+        type: &#39;line&#39;
+    }]
+};
 </code></pre>
-
-<pre class="line-numbers"><code class="language-mermaid">gantt
-    dateFormat YYYY-MM-DDD
-    title 工作进度表-marmaid-gantt
-    
-    section 每月工作 
-    1:       active,des1,2020-01-1,2020-01-56
-    
-</code></pre>
-
-<h3 id="toc_1">2.流程图</h3>
 
 			</div>
 
@@ -153,12 +132,12 @@ $(document).ready(function(event) {
 
 	    <p class="meta">
 	    
-	        <a class="basic-alignment left" href="15797897411205.html" 
-	        title="Previous Post: Test for echarts in Mweb">&laquo; Test for echarts in Mweb</a>
+	        <a class="basic-alignment left" href="15797914685945.html" 
+	        title="Previous Post: Markdown > Mermaid > flow chart 技术文档">&laquo; Markdown > Mermaid > flow chart 技术文档</a>
 	    
 	    
-	        <a class="basic-alignment right" href="15797910332994.html" 
-	        title="Next Post: Mweb 画图库的添加:资料">Mweb 画图库的添加:资料 &raquo;</a>
+	        <a class="basic-alignment right" href="15796948457650.html" 
+	        title="Next Post: Test For Mermaid - Gantt ; flow chart；">Test For Mermaid - Gantt ; flow chart； &raquo;</a>
 	    
 	    </p>
 	  </footer>
